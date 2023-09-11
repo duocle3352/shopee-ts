@@ -1,9 +1,9 @@
+import useRouteElements from './hooks/useRouteElements'
+
 function App() {
-  return (
-    <div className='App bg-red-900'>
-      <p className='text-blue-300'>Hello</p>
-    </div>
-  )
+  const routeElements = useRouteElements()
+
+  return <div className='App'>{routeElements}</div>
 }
 
 export default App
